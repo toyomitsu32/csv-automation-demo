@@ -4,7 +4,6 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { getAllCsvData, replaceCsvData, seedSampleCsvData, getUserPurchases, createUserWithPassword, verifyUserPassword } from "./db";
-import { stripeRouter } from "./stripe";
 import { sdk } from "./_core/sdk";
 
 export const appRouter = router({
@@ -153,8 +152,6 @@ export const appRouter = router({
       return await getUserPurchases(ctx.user.id);
     }),
   }),
-
-  stripe: stripeRouter,
 });
 
 export type AppRouter = typeof appRouter;
