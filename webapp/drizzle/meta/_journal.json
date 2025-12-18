@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1766037712856,
+      "tag": "0000_lame_mandarin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1766038032893,
+      "tag": "0001_curvy_tombstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1766038595894,
+      "tag": "0002_lumpy_purifiers",
+      "breakpoints": true
+    }
+  ]
+}
